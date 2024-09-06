@@ -1,0 +1,37 @@
+.slider h2 {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 46px;
+    text-align: center;
+}
+
+.slider p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: #666666;
+    padding: 24px 0 121px 0;
+
+}
+
+.slider-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.slider-image img {
+    object-fit: cover;
+    width: 5%;
+    height: 358px;
+    border-radius: 15px 15px 0 0;
+    transition: all .9s;
+  
+}
+
+.slider-image img:hover {
+    width: 28%;
+
+}

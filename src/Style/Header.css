@@ -1,0 +1,21 @@
+
+
+.main-header {
+    background: black;
+    text-transform: cap;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 282px;
+}

@@ -1,0 +1,38 @@
+.service-main {
+
+    background-image: linear-gradient(
+        242deg,
+        black 0.41%,
+        rgba(29,29,29,0.57)41.60%,
+        rgba(58,58,58,0.5) 55.54%,
+        rgba(115,115,115,0)96.28%
+    ),
+    
+    url(/public/scroll\ image2.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: rotateY(180deg);
+    margin: 241px 0 148px 0;
+}
+
+.service-content {
+    padding: 143px 0 183px 0;
+    transform: rotateY(180deg);
+}
+
+.service-content h2 {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 46px;
+    margin-bottom: 24px;
+}
+
+.service-content p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    padding-bottom: 289px;
+}
+
+
+

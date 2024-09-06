@@ -1,0 +1,31 @@
+.performence-inner {
+    background-image: url(/public/performence.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+   
+
+}
+
+.performence-inner h2 {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 46px;
+    text-align: center;
+}
+
+.performence-inner p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    margin: 24px 0 42px 0;
+}
+
+.performence-button {
+    text-align: center;
+}
+.content{
+ position: relative;
+    top: 58%;      
+}

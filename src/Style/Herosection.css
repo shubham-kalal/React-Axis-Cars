@@ -1,0 +1,29 @@
+.hero-button a{
+    display: flex;
+}
+
+.hero-section {
+    background-image: url("/public/Banner.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.heading h1 {
+    color: #666666;
+    font-size: 64px;
+    font-weight: 300;
+    line-height: 69px;
+    text-align: center;
+    padding: 59px 0 543px 0;
+
+}
+
+.heading span {
+    color: #A5EFFF;
+}
+
+.hero-button {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 164px;
+}
