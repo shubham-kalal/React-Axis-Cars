@@ -1,24 +1,42 @@
 import "./App.css";
-import Header from "./Components/Header";
-import HeroSection from "./Components/HeroSection";
-import Collection from "./Components/Collection";
-import Service from "./Components/Service";
-import Slider from "./Components/Slider";
-import Facility from "./Components/Facility";
-import Performence from "./Components/Performence";
-import Footer from "./Components/Footer";
+import React, { lazy, Suspense } from 'react';
+
+const Header = lazy(() => import("./Components/Header"));
+const HeroSection = lazy(() => import("./Components/HeroSection"));
+const Collection = lazy(() => import("./Components/Collection"));
+const Service = lazy(() => import("./Components/Service"));
+const Slider = lazy(() => import("./Components/Slider"));
+const Facility = lazy(() => import("./Components/Facility"));
+const Performence = lazy(() => import("./Components/Performence"));
+const Footer = lazy(() => import("./Components/Footer"));
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <HeroSection />
-      <Collection />
-      <Service />
-      <Slider />
-      <Facility />
-      <Performence />
-      <Footer />
+      <Suspense fallback={<div>Loading Header...</div>}>
+        <Header />
+      </Suspense>
+      <Suspense fallback={<div>Loading HeroSection...</div>}>
+        <HeroSection />
+      </Suspense>
+      <Suspense fallback={<div>Loading Collection...</div>}>
+        <Collection />
+      </Suspense>
+      <Suspense fallback={<div>Loading Service...</div>}>
+        <Service />
+      </Suspense>
+      <Suspense fallback={<div>Loading Slider...</div>}>
+        <Slider />
+      </Suspense>
+      <Suspense fallback={<div>Loading Facility...</div>}>
+        <Facility />
+      </Suspense>
+      <Suspense fallback={<div>Loading Performence...</div>}>
+        <Performence />
+      </Suspense>
+      <Suspense fallback={<div>Loading Footer...</div>}>
+        <Footer />
+      </Suspense>
     </div>
   );
 }
