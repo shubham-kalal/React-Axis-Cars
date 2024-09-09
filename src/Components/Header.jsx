@@ -1,42 +1,41 @@
-import React, { useState } from "react";
+import React from "react";
+import Navbtn from "../Components/Navbtn";
 import "../Style/Header.css";
-import Navbtn from "./Navbtn";
-import Menubtn from "./Menubtn";
 
 const Header = () => {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [isOpen, setIsOpen] = React.useState(false);
 
-  const handleMenuToggle = () => {
-    setMenuOpen(!menuOpen);
+  const handleToggle = () => {
+    setIsOpen(!isOpen);
   };
 
   return (
-    <div>
-      <div className="main-header">
-        <div className="container">
-          <header>
-            <div className="logo">
-              <img src="./logo.png" alt="" />
-            </div>
-            <ul className={menuOpen ? "nav-open" : ""}>
-              <li>
-                <a href="">Vehicles</a>
-              </li>
-              <li>
-                <a href="">Design</a>
-              </li>
-              <li>
-                <a href="">Shop</a>
-              </li>
-            <Navbtn />
-            </ul>
-            <div className="header-btn">
-              <Menubtn onClick={handleMenuToggle} />
-            </div>
-          </header>
+    <>
+    <div className="main-header">
+      <nav className="container Header">
+        <div className="logo-img">
+          <img src="./logo.png" alt="" />
         </div>
+        <div className="nav-toggle" onClick={handleToggle}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul className={`Nav-link ${isOpen ? "open" : ""}`}>
+          <li>
+            <a href="">Vehicles</a>
+          </li>
+          <li>
+            <a href="">Design</a>
+          </li>
+          <li>
+            <a href="">Shop</a>
+          </li>
+          <Navbtn />
+        </ul>
+      </nav>
       </div>
-    </div>
+    </>
   );
 };
 

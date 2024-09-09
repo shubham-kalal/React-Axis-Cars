@@ -1,94 +1,73 @@
-.main-header {
-  background: black;
-  text-transform: cap;
+.main-header{
+  background: #000000;
+  position: sticky;
+  width: 100%;
+  top: 0%;
+  z-index: 999;
 }
-
-header {
+.Header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  padding: 15px 0;
+  position: relative;
 }
 
-ul {
+.nav-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #333;
+  margin-bottom: 5px;
+}
+
+.Nav-link {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 282px;
+  width: 100%;
+  max-width: 530px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
 }
 
-.menubtn {
-  display: none;
-  color: white;
-  background-color: transparent;
-  border: none;
-  font-size: 30px;
+.Nav-link.open {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #000000;
+  padding: 20px;
+  border-top: none;
 }
 
-/* .nav-close {
-  display: none;
-} */
-
-.nav-open {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.Nav-link li {
+  margin-bottom: 10px;
 }
 
-/* For large screens (desktops and laptops) */
-@media (min-width: 1200px) {
-  .main-header {
-    padding: 20px;
-  }
-  header {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  ul {
-    width: 400px;
-  }
-  .menubtn {
-    display: none;
-  }
+.Nav-link li:last-child {
+  margin-bottom: 0;
 }
 
-/* For medium screens (tablets) */
-@media (min-width: 768px) and (max-width: 1199px) {
-  .main-header {
-    padding: 15px;
+@media (max-width: 768px) {
+  .Header {
+    padding: 0 25px;
   }
-  header {
-    max-width: 768px;
-    margin: 0 auto;
-  }
-  ul {
-    width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .menubtn {
-    display: none;
-  }
-}
-
-/* For small screens (mobile devices) */
-@media (max-width: 767px) {
-  .main-header {
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  li {
-    margin-bottom: 10px;
-  }
-  ul{
-    display: none;
-  }
-
-  .menubtn {
+  .nav-toggle {
     display: block;
+  }
+  .Nav-link {
+    display: none;
+  }
+
+  .Nav-link.open {
+    max-width: 100%;
+    display: flex;
   }
 }
