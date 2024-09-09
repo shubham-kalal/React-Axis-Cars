@@ -1,29 +1,73 @@
-.hero-button a{
-    display: flex;
-}
-
 .hero-section {
     background-image: url("/public/Banner.gif");
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.heading h1 {
+    background-position: center; 
+    height: 100vh; /* Added to make the hero section full height */
+  }
+  
+  .heading h1 {
     color: #666666;
     font-size: 64px;
     font-weight: 300;
     line-height: 69px;
     text-align: center;
     padding: 59px 0 543px 0;
-
-}
-
-.heading span {
+  }
+  
+  .heading span {
     color: #A5EFFF;
-}
-
-.hero-button {
+  }
+  
+  .hero-button {
     display: flex;
     justify-content: center;
     padding-bottom: 164px;
-}
+  }
+  
+  /* Media queries for responsiveness */
+  
+  /* For large screens (desktops and laptops) */
+  @media (min-width: 1200px) {
+    .hero-section {
+      height: 100vh;
+    }
+    .heading h1 {
+      font-size: 80px;
+      padding: 100px 0 450px 0;
+    }
+    .hero-button {
+      padding-bottom: 200px;
+    }
+  }
+  
+  /* For medium screens (tablets) */
+  @media (min-width: 768px) and (max-width: 1199px) {
+    .hero-section {
+      height: 80vh;
+    }
+    .heading h1 {
+      font-size: 60px;
+      padding: 80px 0 350px 0;
+    }
+    .hero-button {
+      padding-bottom: 150px;
+    }
+  }
+  
+  /* For small screens (mobile devices) */
+  @media (max-width: 767px) {
+    .hero-section {
+      height: 72vh;
+    }
+    .heading h1 {
+      font-size: 40px;
+      padding: 40px 0 200px 0;
+    }
+    .hero-button {
+      padding-bottom: 100px;
+    }
+    .hero-button a {
+      font-size: 16px;
+    }
+  }

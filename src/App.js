@@ -16,7 +16,7 @@ function App() {
       <Collection />
       <Service />
       <Slider />
-      <Facility />
+      {/* <Facility /> */}
       <Performence />
       <Footer />
     </div>

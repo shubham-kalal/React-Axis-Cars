@@ -35,3 +35,17 @@
     width: 28%;
 
 }
+.slider{
+    padding: 0 20px;
+}
+
+
+ /* For small screens (mobile devices) */
+ @media (max-width: 767px) {
+    .slider p {
+        padding: 24px 0 70px 0;
+    }
+    .slider {
+        padding: 24px 0 70px 0;
+    }
+}

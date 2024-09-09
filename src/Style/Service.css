@@ -13,6 +13,7 @@
     background-size: cover;
     transform: rotateY(180deg);
     margin: 241px 0 148px 0;
+    padding: 0 20px;
 }
 
 .service-content {
@@ -34,5 +35,19 @@
     padding-bottom: 289px;
 }
 
-
+ /* For small screens (mobile devices) */
+ @media (max-width: 767px) {
+    .service-main {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    }
+    .service-content p {
+       
+        padding-bottom: 150px;
+    }
+    .service-content {
+        padding: 100px 0 120px 0;
+      
+    }
+}
 

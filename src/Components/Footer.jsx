@@ -33,7 +33,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="get-btn">
-            Got To Top
+            <a href="#top" >Got To Top
             <svg
               width="47"
               height="47"
@@ -54,6 +54,7 @@ const Footer = () => {
                 stroke-width="0.558712"
               />
             </svg>
+            </a>
           </div>
         </div>
         <div className="bottem-foter">
@@ -80,9 +81,9 @@ const Footer = () => {
               </p>
             </div>
           </div>
-          <div className="inner-bottem-foter">
+          {/* <div className="inner-bottem-foter">
             <input placeholder="Leave a message"/>
-            <svg
+            <svg className="footer-input"
               width="80"
               height="81"
               viewBox="0 0 80 81"
@@ -102,7 +103,7 @@ const Footer = () => {
                 stroke-width="0.558712"
               />
             </svg>
-          </div>
+          </div> */}
         </div>
         <hr />
       </div>

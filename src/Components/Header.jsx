@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
+import "../Style/Header.css";
 import Navbtn from "./Navbtn";
-import  "../Style/Header.css"
- 
-// const BtnStyle =
+import Menubtn from "./Menubtn";
+
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const handleMenuToggle = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <div>
       <div className="main-header">
@@ -12,7 +18,7 @@ const Header = () => {
             <div className="logo">
               <img src="./logo.png" alt="" />
             </div>
-            <ul>
+            <ul className={menuOpen ? "nav-open" : ""}>
               <li>
                 <a href="">Vehicles</a>
               </li>
@@ -22,11 +28,10 @@ const Header = () => {
               <li>
                 <a href="">Shop</a>
               </li>
+            <Navbtn />
             </ul>
             <div className="header-btn">
-
-            <Navbtn/>
-
+              <Menubtn onClick={handleMenuToggle} />
             </div>
           </header>
         </div>
