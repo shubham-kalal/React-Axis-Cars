@@ -2,9 +2,7 @@
     background-image: url(/public/performence.gif);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 80vh;
-   
-
+    padding: 190px 0 60px 0;
 }
 
 .performence-inner h2 {

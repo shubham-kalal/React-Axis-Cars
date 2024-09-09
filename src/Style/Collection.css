@@ -62,7 +62,7 @@
 .scroll-collection {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 248px;
+    margin-bottom: 20px;
 }
 
 .scroll-text {
@@ -100,7 +100,7 @@
         max-height: 500px;
         }
     .scroll-collection {
-      margin-bottom: 300px;
+      margin-bottom: 200px;
     }
     .scroll-text {
 
@@ -110,9 +110,9 @@
   }
   
   @media (max-width: 767px) {
-    .scroll-collection{
-       
-    }
+  
+}.car-scroll img {
+  margin-top: 20px;
 }
 
   /* For medium screens (tablets) */
@@ -130,7 +130,7 @@
       max-height: 490px;
     }
     .scroll-collection {
-      margin-bottom: 200px;
+      margin-bottom: 100px;
       display: flex;
       justify-content: center;
 
@@ -143,9 +143,14 @@
   
   /* For small screens (mobile devices) */
   @media (max-width: 767px) {
-    .scroll-collection{
-        padding: 0 15px;
-    }
+
+    .inner-main p {
+    
+      padding: 24px 0 52px 0;
+  }
+  .inner-main{
+    padding: 0 20px;
+  }
     .car-scroll {
       height: 300px;
       max-width: 500px;
@@ -155,7 +160,7 @@
     }
     .scroll-collection {
       
-      margin-bottom: 100px;
+      margin-bottom: 70px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -164,7 +169,6 @@
     .scroll-text {
       width: 100%;
       margin-top: 40px;
-      /* padding: 0 0px 0 20px; */
       display: flex;
       justify-content: center;
       align-items: center;
@@ -177,3 +181,12 @@
       margin-bottom: 30px;
     }
   }
+
+  @media (max-width: 525px) {
+    .scroll-text {
+    
+      align-items: flex-start;
+    
+    }
+    }
+  
