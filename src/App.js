@@ -4,7 +4,7 @@ import HeroSection from "./Components/HeroSection";
 import Collection from "./Components/Collection";
 import Service from "./Components/Service";
 import Slider from "./Components/Slider";
-import Facility from "./Components/Facility";
+// import Facility from "./Components/Facility";
 import Performence from "./Components/Performence";
 import Footer from "./Components/Footer";
 
