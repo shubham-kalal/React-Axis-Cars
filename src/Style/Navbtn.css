@@ -1,0 +1,27 @@
+.nav-button {
+    background: transparent;
+    padding: 12px 36px;
+    border: 0.5px solid white;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 12.5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: capitalize;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .nav-button {
+      padding: 10px 30px;
+      font-size: 12px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .nav-button {
+      padding: 8px 240px;
+      font-size: 10px;
+    }
+  }

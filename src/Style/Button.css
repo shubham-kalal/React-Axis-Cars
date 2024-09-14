@@ -1,0 +1,39 @@
+.btn{
+    padding: 22.35px 27.94px;
+    font-weight: 300;
+    font-size: 26.82px;
+    line-height: 26.94px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #FFFFFF26;
+    border: 1px solid #FFFFFF;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 1200px) {
+    .btn {
+      padding: 18px 22px;
+      font-size: 22px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .btn {
+      padding: 14px 18px;
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .btn {
+      padding: 10px 14px;
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .btn {
+      padding: 8px 12px;
+      font-size: 12px;
+    }
+  }
